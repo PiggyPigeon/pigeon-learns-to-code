@@ -1,0 +1,203 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+section {
+    
+    background-color: white;
+}
+
+.hero {
+    background: #1c1d25;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+}
+
+
+footer {
+    padding: 80px;
+    background-color: black;
+    color: #ffffff;
+    text-align:center;
+}
+
+nav {
+    display: flex;
+    /*the command below is separating the logo and the UL*/
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    /*the command below gets rid of the lil dots!*/
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+ul.show {
+    display: block;
+}
+
+li {
+    /*width: 200px;*/
+    /*the comand below removes the underlining and blue that happens to links*/
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0; 
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.hero-area {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color:coral;
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ef744b;
+}
+
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+    height: 130px;
+    margin: 30px;
+}
+
+.social {
+    margin: 20px;
+}
+
+.sub-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(134, 141, 134);
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*anything under or equal to 1000px is going to have a different type of styling*/
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 250px;
+    border-radius: 50px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger: focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+    }  
+    ul {
+        display: none;
+    }
+}
+

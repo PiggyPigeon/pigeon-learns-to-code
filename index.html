@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1d870843d.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Pigeon Party</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="wholePageContainer">
-        <header class="header">
-            <p>USA Phone: 540-205-5601</p>
-            <p>Taiwan Phone: 010-090-honestly-I-forgot-lemme-get-back-to-you</p>
-        </header>
-        <div class="pageTitle">
-            <h1>Pigeon Learns to Code</h1>
-        </div>
-        <div class="projectDirectoryContainer">
-            <h1>The Odin Project Foundation Assignments</h1>
-                <div class="boxesProjectLinksContainer">
-                    <h5><a href="https://piggypigeon.github.io/landing-page/">Landing Page project</a></h5>
-
-                    <h5><a href="https://piggypigeon.github.io/rock-paper-scissors/">Rock, Paper, Scissors project</a></h5>
-
-                    <h5><a href="https://piggypigeon.github.io/odin-recipes/">Recipes Page project</a></h5>
-                </div>
-
-        </div>
-
-        <div class="personalProjectsContainerLarge">
-            <h1>Practice projects of my own</h1>
-                <div class="personalProjectsContainerSmall">
-                    <p>Make the Fizz Buzz one into a page</p>
-                    <p>Also do the 3rd largest word one</p>
-                    <p>Eventual home of RubbrDuck4You!</p>
-                </div>
-        </div>
-
-        <div class="mysteryBoxesContainer">
-            <h1 class="mysteryBoxesTitle">Mystery Boxes</h1>
-                <div class="rowOfBoxes">
-                    <div class="card">
-                        <div class="square"></div>
-                    </div>
-                    <div class="card">
-                        <div class="square"></div>
-                    </div>
-                    <div class="card">
-                        <div class="square"></div>
-                    </div>
-                    <div class="card">
-                        <div class="square"></div>
-                    </div>
-                </div>
-        </div>
-
-        <div class="socialMediaContainerLarge">
-            <h1 class="socialMediaTitle">Every scrap of Pigeon's Internet Presence</h1>
-            <div class="socialMediaContainerSmall">
-                <h5><a href="https://www.instagram.com/hellington12/">Instagram</a></h5>
-                <h5><a href="https://www.facebook.com/BethanyEllington">Facebook</a></h5>
-                <h5><a href="https://www.strava.com/athletes/26163096">Strava</a></h5>
-                <h5><a href="https://www.goodreads.com/user/show/118059167-bethany-ellington">Goodreads</a></h5>
-                <h5><a href="https://eatstraighttylenol.tumblr.com/">Tumblr</a></h5>
-                <h5><a href="https://www.linkedin.com/in/bethany-ellington-13a01b19b/">(Out-of-Date) LinkedIn</a></h5>
-                <h5><a href="https://www.reddit.com/user/Hellington">Reddit</a></h5>
-                <!--<h5><a href="">CouchSurfing</a></h5>-->
-                <h5><a href="https://github.com/PiggyPigeon">GitHub</a></h5>
-                <h5><a href="https://thisismykblog.wordpress.com/">(A very old) Blog</a></h5>
+    <section class="hero">
+        <nav>
+            <img class="logo" src="src/images/pigeon.png" alt="Pigeon's shiddy logo"/>
+            <ul id="nav-list">
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact me</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="hero-area">
+            <div class="hero-text"> 
+                <h1>Pigeon Learns to Code</h1>
+                <p>I do not want to teach anymore plz</p>
+                <div class="button"><a href="#about-me">About me</a></div>
+            </div>
+            <div class="socials">
+                <div><a href="https://www.facebook.com/BethanyEllington" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
+                </a></div>
+                <div><a href="https://www.instagram.com/hellington12/" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a></div>
+                <div><a href="https://github.com/PiggyPigeon" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg>
+                </a></div>
             </div>
         </div>
-        <div class="resumeContainer">
-            <h1>Some resumés?</h1>
+      
+      
+    </section>
+    <section class="sub-section" id="about-me">
+        <div class="information">
+            <h2>About Me</h2>
+            <p>Hello, my name is Pigeon. I am very tired of teaching and am trying to learn coding for free online.</p>
         </div>
+        <div class="headshot-container">
+            <img class="headshot" src="src/images/headshot.png" alt="A picture of a distressed cat."/>
+        </div>
+    </section>
 
-    </div>
-    <footer></footer>
-    <script type="text/javascript" src="scripts.js"></script>
+
+    <section class="sub-section-alternative" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>HTML</h3>
+                <img class="project-image" src="src/images/IMG_1342.png" alt="Project One Image"/>
+                <p class="subtext">Here are some recipes for when you're living at my mom's house.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://piggypigeon.github.io/odin-recipes/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <h3>CSS</h3>
+                <img class="project-image" src="src/images/Screenshot_20211019-062208.png" alt="Project Two Image"/>
+                <p class="subtext">Here is some practice with a landing page.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://piggypigeon.github.io/landing-page/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <h3>JavaScript</h3>
+                <img class="project-image" src="src/images/Screenshot_20211208-093725.jpg" alt="Project Three Image"/>
+                <p class="subtext">Here is a rock, paper, scissors game.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://piggypigeon.github.io/rock-paper-scissors/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <h3>Project Four</h3>
+                <img class="project-image" src="src/images/Screenshot_20211208-093814-1.jpg" alt="Project Four Image"/>
+                <p class="subtext">There is no project here yet, it's just a placeholder.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://github.com/PiggyPigeon">View here</a></p>
+            </div>
+        </div>
+    </section>
+    <footer id="contact-me">
+        <h2>Contact me</h2>
+        <p>bethanyGellington@gmail.com</p>
+    </footer>
+    
+    
+
+
+    <script src="src/scripts.js"></script>
 </body>
 </html>
+
+
+<!--<div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.756 14.745l-.049-.034h-1.636c-.077 0-.081-.233-.082-.311v-2.857l.051-.051h1.909l.051-.05v-2.883l-.051-.05h-1.901l-.05-.05v-2.409l-.05-.05h-3.575c-.245 0-.526.181-.567.517-.17 1.389-.941 2.063-2.139 2.463l-.134.044-.033.048v2.37l.05.05h1.45v3.079c0 2.329 1.521 3.429 4.504 3.429 1.2 0 2.524-.427 2.917-.945l.079-.104-.744-2.206zm.17 2.129c-.375.36-1.277.628-2.014.641l-.084.001c-2.424 0-2.84-1.852-2.84-2.944v-3.52l-.051-.051h-1.39l-.051-.05-.012-1.531.032-.046c1.253-.488 1.953-1.298 2.136-2.797.011-.083.08-.086.081-.086h1.723l.051.051v2.408l.05.05h1.902l.049.05v1.9l-.049.05h-1.91l-.049.051v3.353c.012.719.357 1.084 1.033 1.084.271 0 .558-.064.842-.173l.064.031.498 1.475-.011.053z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-4.702 9.905l2.456 6.728c-1.718-.835-2.901-2.595-2.901-4.633 0-.746.161-1.455.445-2.095zm8.177 1.836c0-.637-.229-1.077-.425-1.42-.26-.424-.505-.783-.505-1.208 0-.489.373-.94.932-.909-.916-.839-2.137-1.351-3.477-1.351-1.798 0-3.38.922-4.301 2.319.313.011.745.017 1.703-.059.277-.016.31.392.034.424 0 0-.28.032-.591.049l1.875 5.575 1.127-3.378-.802-2.197-.54-.049c-.278-.017-.244-.44.032-.424 1.106.085 1.635.086 2.728 0 .278-.016.311.392.032.424 0 0-.278.032-.588.049l1.859 5.532.515-1.715c.223-.711.392-1.223.392-1.662zm-3.384.709l-1.545 4.488c.461.135.948.209 1.454.209.6 0 1.175-.104 1.709-.291-.042-.07-1.59-4.329-1.618-4.406zm4.426-2.919c.112.825-.049 1.604-.356 2.373l-1.573 4.545c1.53-.892 2.561-2.55 2.561-4.449-.002-.895-.23-1.736-.632-2.469zm1.483 2.469c0 3.309-2.692 6-6 6s-6-2.691-6-6 2.692-6 6-6 6 2.691 6 6zm-.275 0c0-3.156-2.568-5.725-5.725-5.725s-5.725 2.568-5.725 5.725c0 3.157 2.568 5.726 5.725 5.726s5.725-2.569 5.725-5.726z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 11.889c0-.729-.596-1.323-1.329-1.323-.358 0-.681.143-.92.373-.905-.595-2.13-.975-3.485-1.023l.742-2.334 2.008.471-.003.029c0 .596.487 1.082 1.087 1.082.599 0 1.086-.485 1.086-1.082s-.488-1.082-1.087-1.082c-.46 0-.852.287-1.01.69l-2.164-.507c-.094-.023-.191.032-.22.124l-.827 2.603c-1.419.017-2.705.399-3.65 1.012-.237-.219-.552-.356-.9-.356-.732.001-1.328.594-1.328 1.323 0 .485.267.905.659 1.136-.026.141-.043.283-.043.429-.001 1.955 2.404 3.546 5.359 3.546 2.956 0 5.36-1.591 5.36-3.546 0-.137-.015-.272-.038-.405.416-.224.703-.657.703-1.16zm-8.612.908c0-.434.355-.788.791-.788.436 0 .79.353.79.788 0 .434-.355.787-.79.787-.436.001-.791-.352-.791-.787zm4.53 2.335c-.398.396-1.024.589-1.912.589l-.007-.001-.007.001c-.888 0-1.514-.193-1.912-.589-.073-.072-.073-.19 0-.262.072-.072.191-.072.263 0 .325.323.864.481 1.649.481l.007.001.007-.001c.784 0 1.324-.157 1.649-.481.073-.072.19-.072.263 0 .073.072.073.19 0 .262zm-.094-1.547c-.436 0-.79-.353-.79-.787 0-.434.355-.788.79-.788.436 0 .79.353.79.788 0 .434-.354.787-.79.787z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
+                </div>
+                <div>
+                    Strava
+                </div>
+                <div>Goodreads</div>-->
