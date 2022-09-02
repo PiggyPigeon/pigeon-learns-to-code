@@ -208,7 +208,7 @@ a {
     display: none;
 }
 
-.hamburger: focus {
+.hamburger:focus {
     outline: 0;
 }
 
