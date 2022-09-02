@@ -104,17 +104,39 @@ p {
     color: #808080;
 }
 
+.logo {
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+    margin: 30px;
+    border: 4px solid coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-solid.fa-crow {
+    color:coral;
+}
+
+.icon-box{
+    display: flex;
+
+}
 .socials {
     padding-bottom: 200px;
 }
 
-.logo {
-    height: 130px;
-    margin: 30px;
-}
-
 .social {
     margin: 20px;
+}
+
+.fa-solid.fa-person-running {
+    color: #eb9d80;
+}
+
+.fa-solid.fa-book-bookmark{
+    color: #eb9d80;
 }
 
 .sub-section{
