@@ -36,11 +36,13 @@ ul {
     width: 500px;
     justify-content: space-around;
     font-size: 30px;
+    flex-direction: row;
 }
 
+/*the code below is supposed to make the humburger button display the UL upon click but doesnt work*/
 ul.show {
     display: block;
-}
+} 
 
 li {
     /*width: 200px;*/
@@ -195,9 +197,30 @@ a {
         background-color: transparent;
         color: white;
         font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
     }  
+
     ul {
         display: none;
+        background-color: #2b2c38;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo {
+        display: none;
+
     }
 }
+
 
